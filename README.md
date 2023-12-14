@@ -6,13 +6,21 @@ Some of the implementation is based on the Matlab SSC-Basis Pursuit ADMM code fr
 
 The SSC implementation in `ssc.ssc.sparse_subspace_clustering`.
 
-The correspond ADMM implementation in `ssc/admm.py`(CPU) and `ssc/admm_gpu.py`(CUDA).
+The corresponding ADMM implementation in `ssc/admm.py`(CPU) and `ssc/admm_gpu.py`(CUDA).
 
 The experiment from the original paper is in `face_clustering.py` and `motion_segmenation.py`
 
 ## Install
 
-Please install follow the instruction in [CuPY install guide](https://docs.cupy.dev/en/stable/install.html).
-You should use `pip install cupy-cuda12x` or `pip install cupy-cuda11x` according to your CUDA version.
+Please install follow the instructions in [CuPY install guide](https://docs.cupy.dev/en/stable/install.html).
+According to your CUDA version, you will use `pip install cupy-cuda12x` or `pip install cupy-cuda11x`.
 
 Other requirements are in `requirements.txt`.
+
+
+## Dataset
+
+The following datasets should be placed in the `./data` folder to reproduce the experiments.
+
+- [`Hopkins155`](http://www.vision.jhu.edu/data/hopkins155/)
+- `YaleBCrop025.mat` is in the original Matlab code.
