@@ -1,0 +1,9 @@
+documents
+.DS_Store
+*.mlx
+*.pyc
+data
+outputs
+.idea
+.ipynb_checkpoints
+__pycache__
